@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "start": "umi dev",
-    "build": "umi build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider umi build",
     "test": "umi test",
     "lint": "eslint --ext .js src mock tests",
     "precommit": "lint-staged"
@@ -23,6 +23,6 @@
  
   },
   "engines": {
-    "node": "16.20.2"
+    "node": "18.20.3"
   }
 }
