@@ -22,7 +22,5 @@
   "lint-staged": {
  
   },
-  "engines": {
-    "node": "18.20.3"
-  }
+
 }
