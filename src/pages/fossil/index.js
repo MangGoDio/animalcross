@@ -1,16 +1,9 @@
 import { useState } from 'react';
 import classnames from 'classnames';
-import { NavHeader } from '../index';
 import { Switch } from 'antd';
-import fossilIcon from '@/assets/fossil_img.png';
 import SearchMap from './components/SearchMap';
-import {
-  requireImg,
-  getMarkInfo,
-  setMarkInfo,
-  setConfigInfo,
-  getConfigInfo,
-} from '@/pages/utils/utils';
+import { getMarkInfo, setMarkInfo, setConfigInfo, getConfigInfo } from '@/pages/utils/utils';
+import NbTips from '@/components/NbTips';
 import fossil_config from '@/pages/utils/fossil_config';
 import styles from './index.less';
 
@@ -27,16 +20,11 @@ export default function(props) {
       return list;
     }
 
-    let arr = [],
-      index_arr = [0, 1, 2, 3, 4, 5];
-    for (let i of index_arr) {
-      for (let j = i, dio = list.length; j < dio; j = j + 6) arr.push(list[j]);
-    }
-    return arr;
+    return list;
   };
 
   const [search, setSearch] = useState({}), // 搜索条件
-    [mark_list, setMarkList] = useState(getMarkInfo('mango_fossil')), // 标记列表
+    [mark_list, setMarkList] = useState(getMarkInfo('mango_fossil') || []), // 标记列表
     [isHideMark, setHideMark] = useState(ac_config.hide_mark ? true : false), // 是否过滤标记结果
     list = initListToMap(fossil_config, search, isHideMark, mark_list);
 
@@ -53,8 +41,7 @@ export default function(props) {
   };
 
   return (
-    <div style={{ padding: 16 }}>
-      <NavHeader current="/fossil" />
+    <div style={{ padding: 8 }}>
       <div className={styles.container}>
         <SearchMap value={search} onChange={value => setSearch(value)} />
         <div style={{ marginBottom: 16 }}>
@@ -69,17 +56,21 @@ export default function(props) {
             }}
           />
         </div>
-        <div className={styles.card_list} style={{ width: 130 * Math.ceil(list.length / 6) }}>
-          {list.map(i => (
-            <ImgCard
-              key={i.id}
-              info={i}
-              search={search}
-              mark_list={mark_list}
-              onClick={() => saveMarkInfo(i.id)}
-            />
-          ))}
-        </div>
+        {list.length > 0 ? (
+          <div className={styles.card_list}>
+            {list.map(i => (
+              <ImgCard
+                key={i.id}
+                info={i}
+                search={search}
+                mark_list={mark_list}
+                onClick={() => saveMarkInfo(i.id)}
+              />
+            ))}
+          </div>
+        ) : (
+          <div>{JSON.stringify(search) === '{}' && <NbTips />}</div>
+        )}
       </div>
     </div>
   );
@@ -97,15 +88,7 @@ const ImgCard = props => {
       })}
       onClick={onClick}
     >
-      {info.img ? (
-        <img
-          className={styles.fossil_img}
-          src={requireImg(`fossil/`, `${info.id}.png`)}
-          alt="图标"
-        />
-      ) : (
-        <img alt="占位符" className={styles.fossil_space} src={fossilIcon} />
-      )}
+      <img className={styles.fossil_img} src={info.img} alt="图标" />
       <div>{info.name}</div>
       <div style={{ fontSize: 12 }}>￥{info.price}</div>
     </div>

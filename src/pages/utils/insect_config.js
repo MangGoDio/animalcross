@@ -1,20 +1,21 @@
-// place 1花 2空中 3树木 4草地 5水边 6地里 7池塘 8河上/池塘 9树桩 10雪球附近 11地面 12沙滩 13村民头上 14石头 15草地/地面 16 椰子树 17 树木(除椰子树) 18 礁石
+// place 1花 2空中 3树木 4地面 5水边 6地里 7池塘 8河上/池塘 9树桩 10雪球附近  12沙滩 13村民头上 14石头 15草地/地面 16 椰子树 17 树木(除椰子树) 18 礁石
 // condit 1雨雪天不出现 2雨天
 // time 1 全天  2 4-17  3 4-19  4 8-16  5 8-17  6 8-19  7 16-23  8 17-4  9 17-8  10 19-4  11 19-8  12 23-8  13 23-16  14 4-8&16-9  15 4-8&17-19
 
 const config = [
   {
-    id: 1, // 编号
-    name: '白粉蝶', // 名称
+    id: 1,
+    name: '白粉蝶',
     eng_name: 'Common butterfly',
     jap_name: 'モンシロチョウ',
-    price: 160, // 价格
-    place: 1, // 地点
-    desc: '', // 补充说明
-    month_n: [1, 2, 3, 4, 5, 6, 9, 10, 11, 12], // 北半球
-    month_s: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12], // 南半球
-    time: 3, // 时间
-    condit: 2, // 天气
+    price: 160,
+    place: 1,
+    desc: '',
+    month_n: [1, 2, 3, 4, 5, 6, 9, 10, 11, 12],
+    month_s: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    time: 3,
+    condit: 2,
+    model_img: 'FtrInsectMonshirochoToy',
   },
   {
     id: 2,
@@ -28,6 +29,7 @@ const config = [
     month_s: [3, 4, 9, 10, 11, 12],
     time: 3,
     condit: 2,
+    model_img: 'FtrInsectMonkichoToy',
   },
   {
     id: 3,
@@ -41,6 +43,7 @@ const config = [
     month_s: [1, 2, 3, 9, 10, 11, 12],
     time: 3,
     condit: 2,
+    model_img: 'FtrInsectAgehachoToy',
   },
   {
     id: 4,
@@ -49,11 +52,12 @@ const config = [
     jap_name: 'カラスアゲハ',
     price: 2500,
     place: 1,
-    desc: '稀有花朵',
+    desc: '稀有花（黑/紫/青）',
     month_n: [3, 4, 5, 6],
     month_s: [9, 10, 11, 12],
     time: 3,
     condit: 2,
+    model_img: 'FtrInsectKarasuagehaToy',
   },
   {
     id: 5,
@@ -67,6 +71,7 @@ const config = [
     month_s: [1, 2, 10, 11, 12],
     time: 3,
     condit: 2,
+    model_img: 'FtrInsectAosujiagehaToy',
   },
   {
     id: 6,
@@ -74,12 +79,13 @@ const config = [
     eng_name: 'Paper kite butterfly',
     jap_name: 'オオゴマダラ',
     price: 1000,
-    place: 2,
+    place: 1,
     desc: '',
     month_n: [],
     month_s: [],
     time: 6,
     condit: 2,
+    model_img: 'FtrInsectOhgomamadaraToy',
   },
   {
     id: 7,
@@ -87,12 +93,13 @@ const config = [
     eng_name: 'Great purple emperor',
     jap_name: 'オオムラサキ',
     price: 3000,
-    place: 3,
+    place: 1,
     desc: '',
     month_n: [5, 6, 7, 8],
     month_s: [1, 2, 11, 12],
     time: 3,
     condit: 1,
+    model_img: 'FtrInsectOhmurasakiToy',
   },
   {
     id: 8,
@@ -106,6 +113,7 @@ const config = [
     month_s: [3, 4, 5],
     time: 2,
     condit: 2,
+    model_img: 'FtrInsectOhkabamadaraToy',
   },
   {
     id: 9,
@@ -119,6 +127,7 @@ const config = [
     month_s: [1, 2, 3, 6, 7, 8, 9, 12],
     time: 9,
     condit: 2,
+    model_img: 'FtrInsectMorufuochoToy',
   },
   {
     id: 10,
@@ -132,24 +141,26 @@ const config = [
     month_s: [1, 2, 3, 10, 11, 12],
     time: 5,
     condit: 2,
+    model_img: 'FtrInsectMiirotatehaToy',
   },
   {
     id: 11,
     name: '红颈凤蝶',
-    eng_name: `Rajah Brooke's birdwing`,
+    eng_name: "Rajah Brooke's birdwing", //  R. Brooke's birdwing
     jap_name: 'アカエリトリバネアゲハ',
     price: 2500,
-    place: 2,
+    place: 1,
     desc: '',
     month_n: [1, 2, 4, 5, 6, 7, 8, 9, 12],
     month_s: [1, 2, 3, 6, 7, 8, 10, 11, 12],
     time: 5,
     condit: 2,
+    model_img: 'FtrInsectAkaeritoribaneagehaToy',
   },
   {
     id: 12,
     name: '亚历山大蝶',
-    eng_name: `Queen Alexandra's birdwing`,
+    eng_name: "Queen Alexandra's birdwing", // Grand Q. A. birdwing
     jap_name: 'アレクサンドラトリバネアゲハ',
     price: 4000,
     place: 1,
@@ -158,6 +169,7 @@ const config = [
     month_s: [1, 2, 3, 11, 12],
     time: 4,
     condit: 2,
+    model_img: 'FtrInsectArekisandoratoribaneagehaToy',
   },
   {
     id: 13,
@@ -170,12 +182,13 @@ const config = [
     month_n: [],
     month_s: [],
     time: 10,
-    condit: 2,
+    condit: 1,
+    model_img: 'FtrInsectGaToy',
   },
   {
     id: 14,
     name: '皇蛾',
-    eng_name: 'Atlas moth',
+    eng_name: 'Atlas moth', // Grand Atlas moth
     jap_name: 'ヨナグニサン',
     price: 3000,
     place: 3,
@@ -184,11 +197,12 @@ const config = [
     month_s: [1, 2, 3, 10, 11, 12],
     time: 10,
     condit: 1,
+    model_img: 'FtrInsectYonagunisanToy',
   },
   {
     id: 15,
     name: '日落蛾',
-    eng_name: 'Madagascan sunset moth',
+    eng_name: 'Madagascan sunset moth', // M. sunset moth
     jap_name: 'ニシキオオツバメガ',
     price: 2500,
     place: 1,
@@ -196,7 +210,8 @@ const config = [
     month_n: [4, 5, 6, 7, 8, 9],
     month_s: [1, 2, 3, 10, 11, 12],
     time: 4,
-    condit: 2,
+    condit: 1,
+    model_img: 'FtrInsectNishikiohtsubamegaToy',
   },
   {
     id: 16,
@@ -209,7 +224,8 @@ const config = [
     month_n: [4, 5, 6, 7, 8, 9, 10, 11],
     month_s: [1, 2, 3, 4, 5, 10, 11, 12],
     time: 6,
-    condit: 2,
+    condit: 1,
+    model_img: 'FtrInsectShoryobattaToy',
   },
   {
     id: 17,
@@ -222,7 +238,8 @@ const config = [
     month_n: [8, 9, 10, 11],
     month_s: [2, 3, 4, 5],
     time: 6,
-    condit: 2,
+    condit: 1,
+    model_img: 'FtrInsectTonosamabattaToy',
   },
   {
     id: 18,
@@ -235,7 +252,8 @@ const config = [
     month_n: [8, 9, 10, 11],
     month_s: [2, 3, 4, 5],
     time: 6,
-    condit: 2,
+    condit: 1,
+    model_img: 'FtrInsectInagoToy',
   },
   {
     id: 19,
@@ -249,6 +267,7 @@ const config = [
     month_s: [1, 2, 3],
     time: 5,
     condit: 2,
+    model_img: 'FtrInsectKirigirisuToy',
   },
   {
     id: 20,
@@ -262,6 +281,7 @@ const config = [
     month_s: [3, 4, 5],
     time: 9,
     condit: 2,
+    model_img: 'FtrInsectKohrogiToy',
   },
   {
     id: 21,
@@ -275,6 +295,7 @@ const config = [
     month_s: [3, 4],
     time: 9,
     condit: 2,
+    model_img: 'FtrInsectSuzumushiToy',
   },
   {
     id: 22,
@@ -288,6 +309,7 @@ const config = [
     month_s: [1, 2, 3, 4, 5, 9, 10, 11, 12],
     time: 5,
     condit: 2,
+    model_img: 'FtrInsectKamakiriToy',
   },
   {
     id: 23,
@@ -296,11 +318,12 @@ const config = [
     jap_name: 'ハナカマキリ',
     price: 2400,
     place: 1,
-    desc: '白花/铃兰',
+    desc: '白花',
     month_n: [3, 4, 5, 6, 7, 8, 9, 10, 11],
     month_s: [1, 2, 3, 4, 5, 9, 10, 11, 12],
     time: 5,
     condit: 2,
+    model_img: 'FtrInsectHanakamakiriToy',
   },
   {
     id: 24,
@@ -314,6 +337,7 @@ const config = [
     month_s: [1, 9, 10, 11, 12],
     time: 5,
     condit: 2,
+    model_img: 'FtrInsectMitsubachiToy',
   },
   {
     id: 25,
@@ -327,45 +351,49 @@ const config = [
     month_s: [],
     time: 1,
     condit: 1,
+    model_img: 'FtrInsectHachiToy',
   },
   {
     id: 26,
     name: '油蝉',
-    eng_name: 'Brown Cicada',
+    eng_name: 'Brown cicada',
     jap_name: 'アブラゼミ',
     price: 250,
-    place: 17,
+    place: 3,
     desc: '',
     month_n: [7, 8],
     month_s: [1, 2],
     time: 5,
     condit: 1,
+    model_img: 'FtrInsectAburazemiToy',
   },
   {
     id: 27,
     name: '斑透翅蝉',
-    eng_name: 'Robust Cicada',
+    eng_name: 'Robust cicada',
     jap_name: '',
     price: 300,
-    place: 17,
+    place: 3,
     desc: 'ミンミンゼミ',
     month_n: [7, 8],
     month_s: [1, 2],
     time: 5,
     condit: 1,
+    model_img: 'FtrInsectMinminzemiToy',
   },
   {
     id: 28,
     name: '熊蝉',
-    eng_name: 'Giant Cicada',
+    eng_name: 'Giant cicada',
     jap_name: '',
     price: 500,
-    place: 17,
+    place: 3,
     desc: 'クマゼミ',
     month_n: [7, 8],
     month_s: [1, 2],
     time: 5,
     condit: 1,
+    model_img: 'FtrInsectKumazemiToy',
   },
   {
     id: 29,
@@ -373,25 +401,27 @@ const config = [
     eng_name: 'Walker cicada',
     jap_name: 'ツクツクホウシ',
     price: 400,
-    place: 17,
+    place: 3,
     desc: '',
     month_n: [8, 9],
     month_s: [2, 3],
     time: 5,
     condit: 1,
+    model_img: 'FtrInsectTsukutsukuhousiToy',
   },
   {
     id: 30,
     name: '暮蝉',
-    eng_name: 'Evening Cicada',
+    eng_name: 'Evening cicada',
     jap_name: 'ヒグラシ',
     price: 550,
-    place: 17,
+    place: 3,
     desc: '',
     month_n: [7, 8],
     month_s: [1, 2],
     time: 14,
     condit: 1,
+    model_img: 'FtrInsectHigurashiToy',
   },
   {
     id: 31,
@@ -399,12 +429,13 @@ const config = [
     eng_name: 'Cicada shell',
     jap_name: 'セミのぬけがら',
     price: 10,
-    place: 17,
+    place: 3,
     desc: '',
     month_n: [7, 8],
     month_s: [1, 2],
     time: 1,
     condit: 1,
+    model_img: 'FtrInsectSeminonukegaraToy',
   },
   {
     id: 32,
@@ -418,6 +449,7 @@ const config = [
     month_s: [3, 4],
     time: 6,
     condit: 2,
+    model_img: 'FtrInsectAkiakaneToy',
   },
   {
     id: 33,
@@ -431,11 +463,12 @@ const config = [
     month_s: [1, 2, 3, 4, 10, 11, 12],
     time: 5,
     condit: 2,
+    model_img: 'FtrInsectGinyanmaToy',
   },
   {
     id: 34,
     name: '无霸勾蜓',
-    eng_name: 'Banded dragonfly',
+    eng_name: 'Darner dragonfly', // Banded dragonfly
     jap_name: 'オニヤンマ',
     price: 4500,
     place: 2,
@@ -444,6 +477,7 @@ const config = [
     month_s: [1, 2, 3, 4, 11, 12],
     time: 5,
     condit: 2,
+    model_img: 'FtrInsectOniyanmaToy',
   },
   {
     id: 35,
@@ -457,6 +491,7 @@ const config = [
     month_s: [5, 6, 7, 8],
     time: 1,
     condit: 2,
+    model_img: 'FtrInsectItotonboToy',
   },
   {
     id: 36,
@@ -470,6 +505,7 @@ const config = [
     month_s: [12],
     time: 10,
     condit: 2,
+    model_img: 'FtrInsectHotaruToy',
   },
   {
     id: 37,
@@ -483,6 +519,7 @@ const config = [
     month_s: [5, 6, 7, 8, 9, 10, 11],
     time: 1,
     condit: 1,
+    model_img: 'FtrInsectOkeraToy',
   },
   {
     id: 38,
@@ -495,7 +532,8 @@ const config = [
     month_n: [5, 6, 7, 8, 9],
     month_s: [1, 2, 3, 11, 12],
     time: 6,
-    condit: 2,
+    condit: 1,
+    model_img: 'FtrInsectAmenboToy',
   },
   {
     id: 39,
@@ -509,6 +547,7 @@ const config = [
     month_s: [1, 2, 3, 11, 12],
     time: 6,
     condit: 1,
+    model_img: 'FtrInsectGengorouToy',
   },
   {
     id: 40,
@@ -522,6 +561,7 @@ const config = [
     month_s: [1, 2, 3, 10, 11, 12],
     time: 11,
     condit: 1,
+    model_img: 'FtrInsectTagameToy',
   },
   {
     id: 41,
@@ -534,7 +574,8 @@ const config = [
     month_n: [3, 4, 5, 6, 7, 8, 9, 10],
     month_s: [1, 2, 3, 4, 9, 10, 11, 12],
     time: 1,
-    condit: 1,
+    condit: 2,
+    model_img: 'FtrInsectKamemushiToy',
   },
   {
     id: 42,
@@ -547,7 +588,8 @@ const config = [
     month_n: [3, 4, 5, 6, 7, 8, 9, 10],
     month_s: [1, 2, 3, 4, 9, 10, 11, 12],
     time: 11,
-    condit: 1,
+    condit: 2,
+    model_img: 'FtrInsectJinmenkamemushiToy',
   },
   {
     id: 43,
@@ -561,6 +603,7 @@ const config = [
     month_s: [4, 9, 10, 11, 12],
     time: 5,
     condit: 2,
+    model_img: 'FtrInsectTentoumushiToy',
   },
   {
     id: 44,
@@ -574,6 +617,7 @@ const config = [
     month_s: [1, 2, 3, 4, 8, 9, 10, 11, 12],
     time: 1,
     condit: 2,
+    model_img: 'FtrInsectHanmyouToy',
   },
   {
     id: 45,
@@ -586,7 +630,8 @@ const config = [
     month_n: [4, 5, 6, 7, 8],
     month_s: [1, 2, 10, 11, 12],
     time: 1,
-    condit: 1,
+    condit: 2,
+    model_img: 'FtrInsectTamamushiToy',
   },
   {
     id: 46,
@@ -600,11 +645,12 @@ const config = [
     month_s: [3, 4, 5, 11, 12],
     time: 1,
     condit: 2,
+    model_img: 'FtrInsectBaiorinmushiToy',
   },
   {
     id: 47,
     name: '星天牛',
-    eng_name: 'Citrus Long-horned Beetle',
+    eng_name: 'Citrus Long-horned Beetle', // Citrus long-horned b.
     jap_name: 'ゴマダラカミキリ',
     price: 350,
     place: 9,
@@ -612,7 +658,8 @@ const config = [
     month_n: [],
     month_s: [],
     time: 1,
-    condit: 1,
+    condit: 2,
+    model_img: 'FtrInsectGomadarakamikiriToy',
   },
   {
     id: 48,
@@ -625,7 +672,8 @@ const config = [
     month_n: [5, 6, 7, 8, 9],
     month_s: [1, 2, 3, 11, 12],
     time: 1,
-    condit: 1,
+    condit: 2,
+    model_img: 'FtrInsectRuriboshikamikiriToy',
   },
   {
     id: 49,
@@ -633,12 +681,13 @@ const config = [
     eng_name: 'Blue weevil beetle',
     jap_name: 'ホウセキゾウムシ',
     price: 800,
-    place: 3,
+    place: 16,
     desc: '',
     month_n: [7, 8],
     month_s: [1, 2],
     time: 1,
     condit: 1,
+    model_img: 'FtrInsectHousekizoumushiToy',
   },
   {
     id: 50,
@@ -652,11 +701,12 @@ const config = [
     month_s: [6, 7, 8],
     time: 1,
     condit: 1,
+    model_img: 'FtrInsectFunkorogashiToy',
   },
   {
     id: 51,
     name: '雪隐金龟',
-    eng_name: 'Earth-boring Dung Beetle',
+    eng_name: 'Earth-boring Dung Beetle', // Earth-boring dung b.
     jap_name: 'オオセンチコガネ',
     price: 300,
     place: 4,
@@ -665,6 +715,7 @@ const config = [
     month_s: [1, 2, 3],
     time: 1,
     condit: 1,
+    model_img: 'FtrInsectSenchikoganeToy',
   },
   {
     id: 52,
@@ -678,10 +729,11 @@ const config = [
     month_s: [1, 2],
     time: 12,
     condit: 1,
+    model_img: 'FtrInsectPurachinakoganeToy',
   },
   {
     id: 53,
-    name: '白铜锣花金龟',
+    name: '日铜锣花金龟',
     eng_name: 'Drone beetle',
     jap_name: 'カナブン',
     price: 200,
@@ -691,11 +743,12 @@ const config = [
     month_s: [1, 2, 12],
     time: 1,
     condit: 1,
+    model_img: 'FtrInsectKanabunToy',
   },
   {
     id: 54,
     name: '歌利亚大角花金龟',
-    eng_name: 'Goliath beetle',
+    eng_name: 'Goliath beetle', // Grand goliath beetle
     jap_name: 'ゴライアスオオツノハナムグリ',
     price: 8000,
     place: 16,
@@ -704,10 +757,11 @@ const config = [
     month_s: [1, 2, 3, 12],
     time: 9,
     condit: 1,
+    model_img: 'FtrInsectGoraiasuohtsunohanamuguriToy',
   },
   {
     id: 55,
-    name: '锯锹金龟',
+    name: '锯锹形虫',
     eng_name: 'Saw stag',
     jap_name: 'ノコギリクワガタ',
     price: 2000,
@@ -717,10 +771,11 @@ const config = [
     month_s: [1, 2],
     time: 1,
     condit: 1,
+    model_img: 'FtrInsectNokogirikuwagataToy',
   },
   {
     id: 56,
-    name: '深山锹金龟',
+    name: '深山锹形虫',
     eng_name: 'Miyama stag',
     jap_name: 'ミヤマクワガタ',
     price: 1000,
@@ -730,6 +785,7 @@ const config = [
     month_s: [1, 2],
     time: 1,
     condit: 1,
+    model_img: 'FtrInsectMiyamakuwagataToy',
   },
   {
     id: 57,
@@ -743,6 +799,7 @@ const config = [
     month_s: [1, 2],
     time: 12,
     condit: 1,
+    model_img: 'FtrInsectOhkuwagataToy',
   },
   {
     id: 58,
@@ -756,6 +813,7 @@ const config = [
     month_s: [1, 2, 3, 12],
     time: 11,
     condit: 1,
+    model_img: 'FtrInsectNijiirokuwagataToy',
   },
   {
     id: 59,
@@ -769,6 +827,7 @@ const config = [
     month_s: [1, 2],
     time: 9,
     condit: 1,
+    model_img: 'FtrInsectHosoakakuwagataToy',
   },
   {
     id: 60,
@@ -782,19 +841,21 @@ const config = [
     month_s: [1, 2],
     time: 9,
     condit: 1,
+    model_img: 'FtrInsectOugononikuwagataToy',
   },
   {
     id: 61,
     name: '长颈鹿锯锹形虫',
-    eng_name: 'Giraffe stag',
+    eng_name: 'Giraffe stag', // Grand giraffe stag
     jap_name: 'ギラファノコギリクワガタ',
     price: 12000,
-    place: 3,
+    place: 16,
     desc: '',
     month_n: [7, 8],
     month_s: [1, 2],
     time: 9,
     condit: 1,
+    model_img: 'FtrInsectGirafanokogirikuwagataToy',
   },
   {
     id: 62,
@@ -808,10 +869,11 @@ const config = [
     month_s: [1, 2],
     time: 9,
     condit: 1,
+    model_img: 'FtrInsectKabutomushiToy',
   },
   {
     id: 63,
-    name: '高卡萨斯南阳大兜虫',
+    name: '高卡萨斯南洋大兜虫',
     eng_name: 'Horned atlas',
     jap_name: 'コーカサスオオカブト',
     price: 8000,
@@ -821,6 +883,7 @@ const config = [
     month_s: [1, 2],
     time: 9,
     condit: 1,
+    model_img: 'FtrInsectKohkasasuohkabutoToy',
   },
   {
     id: 64,
@@ -834,11 +897,12 @@ const config = [
     month_s: [1, 2],
     time: 9,
     condit: 1,
+    model_img: 'FtrInsectZoukabutoToy',
   },
   {
     id: 65,
     name: '长戟大兜虫',
-    eng_name: 'Horned hercules',
+    eng_name: 'Horned hercules', // Citrus long-horned b.
     jap_name: 'ヘラクレスオオカブト',
     price: 12000,
     place: 16,
@@ -847,6 +911,7 @@ const config = [
     month_s: [1, 2],
     time: 9,
     condit: 1,
+    model_img: 'FtrInsectHerakuresuohkabutoToy',
   },
   {
     id: 66,
@@ -860,6 +925,7 @@ const config = [
     month_s: [1, 2, 3, 4, 5],
     time: 15,
     condit: 1,
+    model_img: 'FtrInsectNanafushiToy',
   },
   {
     id: 67,
@@ -873,6 +939,7 @@ const config = [
     month_s: [1, 2, 3],
     time: 1,
     condit: 1,
+    model_img: 'FtrInsectKonohamushiToy',
   },
   {
     id: 68,
@@ -886,6 +953,7 @@ const config = [
     month_s: [],
     time: 1,
     condit: 1,
+    model_img: 'FtrInsectMinomushiToy',
   },
   {
     id: 69,
@@ -893,12 +961,13 @@ const config = [
     eng_name: 'Ant',
     jap_name: 'アリ',
     price: 80,
-    place: 11,
+    place: 4,
     desc: '腐烂的大头菜/糖块',
     month_n: [],
     month_s: [],
     time: 1,
     condit: 1,
+    model_img: 'FtrInsectAriToy',
   },
   {
     id: 70,
@@ -912,6 +981,7 @@ const config = [
     month_s: [],
     time: 11,
     condit: 1,
+    model_img: 'FtrInsectYadokariToy',
   },
   {
     id: 71,
@@ -924,7 +994,8 @@ const config = [
     month_n: [],
     month_s: [],
     time: 1,
-    condit: 2,
+    condit: 1,
+    model_img: 'FtrInsectFunamushiToy',
   },
   {
     id: 72,
@@ -938,6 +1009,7 @@ const config = [
     month_s: [],
     time: 1,
     condit: 1,
+    model_img: 'FtrInsectHaeToy',
   },
   {
     id: 73,
@@ -951,6 +1023,7 @@ const config = [
     month_s: [1, 2, 3, 12],
     time: 8,
     condit: 2,
+    model_img: 'FtrInsectKaToy',
   },
   {
     id: 74,
@@ -960,10 +1033,11 @@ const config = [
     price: 70,
     place: 13,
     desc: '',
-    month_n: [3, 4, 5, 6, 7, 8, 9, 10, 11],
-    month_s: [1, 2, 3, 4, 5, 9, 10, 11, 12],
+    month_n: [4, 5, 6, 7, 8, 9, 10, 11],
+    month_s: [1, 2, 3, 4, 5, 10, 11, 12],
     time: 1,
     condit: 1,
+    model_img: 'FtrInsectNomiToy',
   },
   {
     id: 75,
@@ -977,6 +1051,7 @@ const config = [
     month_s: [],
     time: 1,
     condit: 3,
+    model_img: 'FtrInsectKatatsumuriToy',
   },
   {
     id: 76,
@@ -990,6 +1065,7 @@ const config = [
     month_s: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     time: 13,
     condit: 1,
+    model_img: 'FtrInsectDangomushiToy',
   },
   {
     id: 77,
@@ -1003,6 +1079,7 @@ const config = [
     month_s: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
     time: 7,
     condit: 1,
+    model_img: 'FtrInsectMukadeToy',
   },
   {
     id: 78,
@@ -1010,12 +1087,13 @@ const config = [
     eng_name: 'Spider',
     jap_name: 'クモ',
     price: 600,
-    place: 3,
+    place: 17,
     desc: '摇树',
     month_n: [],
     month_s: [],
     time: 11,
     condit: 1,
+    model_img: 'FtrInsectKumoToy',
   },
   {
     id: 79,
@@ -1023,12 +1101,13 @@ const config = [
     eng_name: 'Tarantula',
     jap_name: 'タランチュラ',
     price: 8000,
-    place: 15,
+    place: 4,
     desc: '',
     month_n: [1, 2, 3, 4, 11, 12],
     month_s: [5, 6, 7, 8, 9, 10],
     time: 10,
     condit: 1,
+    model_img: 'FtrInsectTaranchuraToy',
   },
   {
     id: 80,
@@ -1036,12 +1115,13 @@ const config = [
     eng_name: 'Scorpion',
     jap_name: 'サソリ',
     price: 8000,
-    place: 15,
+    place: 4,
     desc: '',
     month_n: [5, 6, 7, 8, 9, 10],
     month_s: [1, 2, 3, 4, 11, 12],
     time: 10,
     condit: 1,
+    model_img: 'FtrInsectSasoriToy',
   },
 ];
 

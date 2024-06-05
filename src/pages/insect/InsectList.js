@@ -1,12 +1,15 @@
 import { Table, Row } from 'antd';
 import MonthLine from '@/components/MonthLine';
-import { requireImg } from '@/pages/utils/utils';
+import { requireImg, initList } from '@/pages/utils/utils';
 import insect_config from '@/pages/utils/insect_config';
 import { initStatus } from '@/pages/utils/status';
 
 import styles from '../fish/FishList.less';
 
 export default function(props) {
+  const { search, local, isHideMark, mark_list } = props;
+  const dataSource = initList(insect_config, search, local, 'INSECT', isHideMark, mark_list);
+
   const columns = [
     {
       title: '名称',
@@ -65,7 +68,7 @@ export default function(props) {
       <Table
         bordered
         size="small"
-        dataSource={insect_config}
+        dataSource={dataSource}
         columns={columns}
         rowKey="id"
         scroll={{ x: 1500 }}

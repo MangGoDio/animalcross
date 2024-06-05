@@ -8,7 +8,17 @@ import styles from './index.less';
 const url_config = [
   { title: '鱼类图鉴', icon: 'fish_icon.jpg', url: '/fish' },
   { title: '昆虫图鉴', icon: 'insect_icon.jpg', url: '/insect' },
+  { title: '海产图鉴', icon: 'seafood_icon.jpg', url: '/seafood' },
   { title: '化石图鉴', icon: 'fossil_icon.jpg', url: '/fossil' },
+  { title: '美术图鉴', icon: 'artwork_icon.jpg', url: '/artwork' },
+  { title: '家具图鉴', icon: 'furniture_icon.jpg', url: '/furniture' },
+  { title: '雨伞图鉴', icon: 'umbrellas_icon.jpg', url: '/umbrellas' },
+  { title: '反应收集', icon: 'face_icon.jpg', url: '/face' },
+  { title: '唱片图鉴', icon: 'disc_icon.jpg', url: '/disc' },
+  // { title: 'DIY图鉴', icon: 'diy_icon.jpg', url: '/diy' },
+  // { title: '服饰图鉴', icon: 'clothing_icon.jpg', url: '/clothing' },
+  { title: '花卉杂交', icon: 'flower_icon.jpg', url: '/flower' },
+  { title: '导入导出', icon: 'data_icon.jpg', url: '/data' },
   { title: '相关备注', icon: 'help_icon.jpg', url: '/desc' },
 ];
 

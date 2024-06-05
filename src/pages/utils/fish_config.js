@@ -4,16 +4,17 @@
 
 const config = [
   {
-    id: 1, // 编号
-    name: '红目鲫', // 名称
+    id: 1,
+    name: '红目鲫',
     eng_name: 'Bitterling',
     jap_name: 'タナゴ',
-    price: 900, // 价格
-    place: 1, // 地点
-    shape: 1, // 鱼影
-    month_n: [1, 2, 3, 11, 12], // 北半球
-    month_s: [5, 6, 7, 8, 9], // 南半球
-    time: 1, // 时间
+    price: 900,
+    place: 1,
+    shape: 1,
+    month_n: [1, 2, 3, 11, 12],
+    month_s: [5, 6, 7, 8, 9],
+    time: 1,
+    model_img: 'FtrFishTanagoToy',
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 2,
+    model_img: 'FtrFishOikawaToy',
   },
   {
     id: 3,
@@ -38,6 +40,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 1,
+    model_img: 'FtrFishFunaToy',
   },
   {
     id: 4,
@@ -50,6 +53,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 3,
+    model_img: 'FtrFishUguiToy',
   },
   {
     id: 5,
@@ -62,6 +66,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 1,
+    model_img: 'FtrFishKoiToy',
   },
   {
     id: 6,
@@ -74,6 +79,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 3,
+    model_img: 'FtrFishNishikigoiToy',
   },
   {
     id: 7,
@@ -86,6 +92,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 1,
+    model_img: 'FtrFishKingyoToy',
   },
   {
     id: 8,
@@ -98,6 +105,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 2,
+    model_img: 'FtrFishDemekinToy',
   },
   {
     id: 9,
@@ -110,6 +118,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 2,
+    model_img: 'FtrFishRanchuToy',
   },
   {
     id: 10,
@@ -122,6 +131,7 @@ const config = [
     month_n: [4, 5, 6, 7, 8],
     month_s: [1, 2, 10, 11, 12],
     time: 1,
+    model_img: 'FtrFishMedakaToy',
   },
   {
     id: 11,
@@ -134,6 +144,7 @@ const config = [
     month_n: [4, 5, 6, 7, 8, 9],
     month_s: [1, 2, 3, 10, 11, 12],
     time: 1,
+    model_img: 'FtrFishZariganiToy',
   },
   {
     id: 12,
@@ -146,18 +157,20 @@ const config = [
     month_n: [8, 9],
     month_s: [2, 3],
     time: 3,
+    model_img: 'FtrFishSupponToy',
   },
   {
     id: 13,
     name: '拟鳄龟',
     eng_name: 'Snapping turtle',
-    jap_name: 'カミツキガメ	',
+    jap_name: 'カミツキガメ\t',
     price: 5000,
     place: 1,
     shape: 5,
     month_n: [4, 5, 6, 7, 8, 9, 10],
     month_s: [1, 2, 3, 4, 10, 11, 12],
     time: 5,
+    model_img: 'FtrFishKamitsukigameToy',
   },
   {
     id: 14,
@@ -170,6 +183,7 @@ const config = [
     month_n: [3, 4, 5, 6, 7],
     month_s: [1, 9, 10, 11, 12],
     time: 1,
+    model_img: 'FtrFishOtamajakusiToy',
   },
   {
     id: 15,
@@ -180,8 +194,9 @@ const config = [
     place: 4,
     shape: 2,
     month_n: [5, 6, 7, 8],
-    month_s: [1, 2, 10, 11, 12],
+    month_s: [1, 2, 11, 12],
     time: 1,
+    model_img: 'FtrFishKaeruToy',
   },
   {
     id: 16,
@@ -194,6 +209,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 3,
+    model_img: 'FtrFishDonkoToy',
   },
   {
     id: 17,
@@ -206,6 +222,7 @@ const config = [
     month_n: [3, 4, 5],
     month_s: [9, 10, 11],
     time: 1,
+    model_img: 'FtrFishDojouToy',
   },
   {
     id: 18,
@@ -218,6 +235,7 @@ const config = [
     month_n: [5, 6, 7, 8, 9, 10],
     month_s: [1, 2, 3, 4, 11, 12],
     time: 3,
+    model_img: 'FtrFishNamazuToy',
   },
   {
     id: 19,
@@ -230,6 +248,7 @@ const config = [
     month_n: [6, 7, 8],
     month_s: [1, 2, 12],
     time: 2,
+    model_img: 'FtrFishRaigyoToy',
   },
   {
     id: 20,
@@ -242,6 +261,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 2,
+    model_img: 'FtrFishBlueguillToy',
   },
   {
     id: 21,
@@ -254,6 +274,7 @@ const config = [
     month_n: [1, 2, 3, 10, 11, 12],
     month_s: [4, 5, 6, 7, 8, 9],
     time: 1,
+    model_img: 'FtrFishYellowparchToy',
   },
   {
     id: 22,
@@ -266,6 +287,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 1,
+    model_img: 'FtrFishBlackbassToy',
   },
   {
     id: 23,
@@ -278,6 +300,7 @@ const config = [
     month_n: [6, 7, 8, 9, 10],
     month_s: [1, 2, 3, 4, 12],
     time: 1,
+    model_img: 'FtrFishThirapiaToy',
   },
   {
     id: 24,
@@ -290,6 +313,7 @@ const config = [
     month_n: [9, 10, 11, 12],
     month_s: [3, 4, 5, 6],
     time: 1,
+    model_img: 'FtrFishPaikuToy',
   },
   {
     id: 25,
@@ -302,6 +326,7 @@ const config = [
     month_n: [1, 2, 12],
     month_s: [6, 7, 8],
     time: 1,
+    model_img: 'FtrFishWakasagiToy',
   },
   {
     id: 26,
@@ -314,6 +339,7 @@ const config = [
     month_n: [7, 8, 9],
     month_s: [1, 2, 3],
     time: 1,
+    model_img: 'FtrFishAyuToy',
   },
   {
     id: 27,
@@ -325,7 +351,8 @@ const config = [
     shape: 3,
     month_n: [3, 4, 5, 6, 9, 10, 11],
     month_s: [3, 4, 5, 9, 10, 11, 12],
-    time: 3,
+    time: 'special',
+    model_img: 'FtrFishYamameToy',
   },
   {
     id: 28,
@@ -337,7 +364,8 @@ const config = [
     shape: 3,
     month_n: [3, 4, 5, 6, 9, 10, 11],
     month_s: [3, 4, 5, 9, 10, 11, 12],
-    time: 3,
+    time: 'special',
+    model_img: 'FtrFishOoiwanaToy',
   },
   {
     id: 29,
@@ -347,9 +375,10 @@ const config = [
     price: 15000,
     place: 5,
     shape: 3,
-    month_n: [3, 4, 5, 6, 9, 10, 11],
-    month_s: [3, 4, 5, 9, 10, 11, 12],
+    month_n: [3, 4, 5, 9, 10, 11],
+    month_s: [3, 4, 5, 9, 10, 11],
     time: 3,
+    model_img: 'FtrFishGoldenTorautoToy',
   },
   {
     id: 30,
@@ -362,6 +391,7 @@ const config = [
     month_n: [1, 2, 3, 12],
     month_s: [6, 7, 8, 9],
     time: 3,
+    model_img: 'FtrFishItouToy',
   },
   {
     id: 31,
@@ -374,6 +404,7 @@ const config = [
     month_n: [9],
     month_s: [3],
     time: 1,
+    model_img: 'FtrFishSakeToy',
   },
   {
     id: 32,
@@ -386,6 +417,7 @@ const config = [
     month_n: [9],
     month_s: [3],
     time: 1,
+    model_img: 'FtrFishKingsalmonToy',
   },
   {
     id: 33,
@@ -398,6 +430,7 @@ const config = [
     month_n: [9, 10, 11],
     month_s: [3, 4, 5],
     time: 3,
+    model_img: 'FtrFishSyanhaiganiToy',
   },
   {
     id: 34,
@@ -410,6 +443,7 @@ const config = [
     month_n: [4, 5, 6, 7, 8, 9, 10, 11],
     month_s: [1, 2, 3, 4, 5, 10, 11, 12],
     time: 2,
+    model_img: 'FtrFishGuppiToy',
   },
   {
     id: 35,
@@ -422,6 +456,7 @@ const config = [
     month_n: [5, 6, 7, 8, 9],
     month_s: [1, 2, 3, 11, 12],
     time: 2,
+    model_img: 'FtrFishDokutaafishToy',
   },
   {
     id: 36,
@@ -434,6 +469,7 @@ const config = [
     month_n: [5, 6, 7, 8, 9, 10],
     month_s: [1, 2, 3, 4, 11, 12],
     time: 3,
+    model_img: 'FtrFishAngelfishToy',
   },
   {
     id: 37,
@@ -446,6 +482,7 @@ const config = [
     month_n: [5, 6, 7, 8, 9, 10],
     month_s: [1, 2, 3, 4, 11, 12],
     time: 2,
+    model_img: 'FtrFishBetaToy',
   },
   {
     id: 38,
@@ -458,6 +495,7 @@ const config = [
     month_n: [4, 5, 6, 7, 8, 9, 10, 11],
     month_s: [1, 2, 3, 4, 5, 10, 11, 12],
     time: 2,
+    model_img: 'FtrFishNeontetoraToy',
   },
   {
     id: 39,
@@ -470,6 +508,7 @@ const config = [
     month_n: [5, 6, 7, 8, 9, 10],
     month_s: [1, 2, 3, 4, 11, 12],
     time: 2,
+    model_img: 'FtrFishRainbowfishToy',
   },
   {
     id: 40,
@@ -482,6 +521,7 @@ const config = [
     month_n: [6, 7, 8, 9],
     month_s: [1, 2, 3, 12],
     time: 6,
+    model_img: 'FtrFishPiraniaToy',
   },
   {
     id: 41,
@@ -494,6 +534,7 @@ const config = [
     month_n: [6, 7, 8, 9],
     month_s: [1, 2, 3, 12],
     time: 3,
+    model_img: 'FtrFishArowanaToy',
   },
   {
     id: 42,
@@ -506,6 +547,7 @@ const config = [
     month_n: [6, 7, 8, 9],
     month_s: [1, 2, 3, 12],
     time: 4,
+    model_img: 'FtrFishDoladoToy',
   },
   {
     id: 43,
@@ -518,6 +560,7 @@ const config = [
     month_n: [6, 7, 8, 9],
     month_s: [1, 2, 3, 12],
     time: 3,
+    model_img: 'FtrFishGaToy',
   },
   {
     id: 44,
@@ -530,6 +573,7 @@ const config = [
     month_n: [6, 7, 8, 9],
     month_s: [1, 2, 3, 12],
     time: 3,
+    model_img: 'FtrFishPirarukuToy',
   },
   {
     id: 45,
@@ -542,6 +586,7 @@ const config = [
     month_n: [6, 7, 8, 9],
     month_s: [1, 2, 3, 12],
     time: 5,
+    model_img: 'FtrFishEndorikeriiToy',
   },
   {
     id: 46,
@@ -554,10 +599,11 @@ const config = [
     month_n: [1, 2, 3, 9, 10, 11, 12],
     month_s: [3, 4, 5, 6, 7, 8, 9],
     time: 1,
+    model_img: 'FtrFishTyouzameToy',
   },
   {
     id: 47,
-    name: '海蝴蝶',
+    name: '海天使',
     eng_name: 'Sea butterfly',
     jap_name: 'クリオネ',
     price: 1000,
@@ -566,11 +612,12 @@ const config = [
     month_n: [1, 2, 3, 12],
     month_s: [6, 7, 8, 9],
     time: 1,
+    model_img: 'FtrFishKurioneToy',
   },
   {
     id: 48,
     name: '海马',
-    eng_name: 'Seahorse',
+    eng_name: 'Sea horse',
     jap_name: 'タツノオトシゴ',
     price: 1100,
     place: 2,
@@ -578,11 +625,12 @@ const config = [
     month_n: [4, 5, 6, 7, 8, 9, 10, 11],
     month_s: [1, 2, 3, 4, 5, 10, 11, 12],
     time: 1,
+    model_img: 'FtrFishTatsunootoshigoToy',
   },
   {
     id: 49,
     name: '小丑鱼',
-    eng_name: 'Clownfish',
+    eng_name: 'Clown fish',
     jap_name: 'クマノミ',
     price: 650,
     place: 2,
@@ -590,18 +638,20 @@ const config = [
     month_n: [4, 5, 6, 7, 8, 9],
     month_s: [1, 2, 3, 10, 11, 12],
     time: 1,
+    model_img: 'FtrFishKumanomiToy',
   },
   {
     id: 50,
     name: '拟刺尾鲷',
     eng_name: 'Surgeonfish',
-    jap_name: 'ナンヨウハギ	',
+    jap_name: 'ナンヨウハギ\t',
     price: 1000,
     place: 2,
     shape: 2,
     month_n: [4, 5, 6, 7, 8, 9],
     month_s: [1, 2, 3, 10, 11, 12],
     time: 1,
+    model_img: 'FtrFishNanyouhagiToy',
   },
   {
     id: 51,
@@ -614,6 +664,7 @@ const config = [
     month_n: [4, 5, 6, 7, 8, 9],
     month_s: [1, 2, 3, 10, 11, 12],
     time: 1,
+    model_img: 'FtrFishChouchouuoToy',
   },
   {
     id: 52,
@@ -626,6 +677,7 @@ const config = [
     month_n: [7, 8],
     month_s: [1, 2],
     time: 4,
+    model_img: 'FtrFishNaporeonfishToy',
   },
   {
     id: 53,
@@ -638,6 +690,7 @@ const config = [
     month_n: [4, 5, 6, 7, 8, 9, 10, 11],
     month_s: [1, 2, 3, 4, 5, 10, 11, 12],
     time: 1,
+    model_img: 'FtrFishMinokasagoToy',
   },
   {
     id: 54,
@@ -650,6 +703,7 @@ const config = [
     month_n: [1, 2, 11, 12],
     month_s: [5, 6, 7, 8],
     time: 5,
+    model_img: 'FtrFishFuguToy',
   },
   {
     id: 55,
@@ -662,6 +716,7 @@ const config = [
     month_n: [7, 8, 9],
     month_s: [1, 2, 3],
     time: 1,
+    model_img: 'FtrFishHarisenbonToy',
   },
   {
     id: 56,
@@ -674,6 +729,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 4,
+    model_img: 'FtrFishAntyobiToy',
   },
   {
     id: 57,
@@ -686,6 +742,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 1,
+    model_img: 'FtrFishAjiToy',
   },
   {
     id: 58,
@@ -698,6 +755,7 @@ const config = [
     month_n: [3, 4, 5, 6, 7, 8, 9, 10, 11],
     month_s: [1, 2, 3, 4, 5, 9, 10, 11, 12],
     time: 1,
+    model_img: 'FtrFishIshidaiToy',
   },
   {
     id: 59,
@@ -710,6 +768,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 1,
+    model_img: 'FtrFishSuzukiToy',
   },
   {
     id: 60,
@@ -722,6 +781,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 1,
+    model_img: 'FtrFishTaiToy',
   },
   {
     id: 61,
@@ -732,8 +792,9 @@ const config = [
     place: 2,
     shape: 3,
     month_n: [1, 2, 3, 4, 10, 11, 12],
-    month_s: [4, 5, 6, 7, 8.9, 10],
+    month_s: [4, 5, 6, 7, 8, 9, 10],
     time: 1,
+    model_img: 'FtrFishKareiToy',
   },
   {
     id: 62,
@@ -746,6 +807,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 1,
+    model_img: 'FtrFishHirameToy',
   },
   {
     id: 63,
@@ -758,6 +820,7 @@ const config = [
     month_n: [1, 2, 3, 4, 5, 6, 7, 8, 12],
     month_s: [1, 2, 6, 7, 8, 9, 10, 11, 12],
     time: 1,
+    model_img: 'FtrFishIkaToy',
   },
   {
     id: 64,
@@ -770,6 +833,7 @@ const config = [
     month_n: [8, 9, 10],
     month_s: [2, 3, 4],
     time: 1,
+    model_img: 'FtrFishUtsuboToy',
   },
   {
     id: 65,
@@ -782,6 +846,7 @@ const config = [
     month_n: [6, 7, 8, 9, 10],
     month_s: [1, 2, 3, 4, 12],
     time: 1,
+    model_img: 'FtrFishHanahigeutuboToy',
   },
   {
     id: 66,
@@ -794,6 +859,7 @@ const config = [
     month_n: [1, 2, 3, 4, 11, 12],
     month_s: [5, 6, 7, 8, 9, 10],
     time: 1,
+    model_img: 'FtrFishMaguroToy',
   },
   {
     id: 67,
@@ -806,6 +872,7 @@ const config = [
     month_n: [1, 2, 3, 4, 7, 8, 9, 11, 12],
     month_s: [1, 2, 3, 5, 6, 7, 8, 9, 10],
     time: 1,
+    model_img: 'FtrFishKajikiToy',
   },
   {
     id: 68,
@@ -818,6 +885,7 @@ const config = [
     month_n: [5, 6, 7, 8, 9, 10],
     month_s: [1, 2, 3, 4, 11, 12],
     time: 1,
+    model_img: 'FtrFishRouninajiToy',
   },
   {
     id: 69,
@@ -830,6 +898,7 @@ const config = [
     month_n: [5, 6, 7, 8, 9, 10],
     month_s: [1, 2, 3, 4, 11, 12],
     time: 1,
+    model_img: 'FtrFishShiiraToy',
   },
   {
     id: 70,
@@ -842,6 +911,7 @@ const config = [
     month_n: [7, 8, 9],
     month_s: [1, 2, 3],
     time: 4,
+    model_img: 'FtrFishManbouToy',
   },
   {
     id: 71,
@@ -854,6 +924,7 @@ const config = [
     month_n: [8, 9, 10, 11],
     month_s: [2, 3, 4, 5],
     time: 4,
+    model_img: 'FtrFishEiToy',
   },
   {
     id: 72,
@@ -866,10 +937,11 @@ const config = [
     month_n: [6, 7, 8, 9],
     month_s: [1, 2, 3, 12],
     time: 3,
+    model_img: 'FtrFishNokogirizameToy',
   },
   {
     id: 73,
-    name: '双鬓鲨',
+    name: '双髻鲨',
     eng_name: 'Hammerhead shark',
     jap_name: 'シュモクザメ',
     price: 8000,
@@ -878,6 +950,7 @@ const config = [
     month_n: [6, 7, 8, 9],
     month_s: [1, 2, 3, 12],
     time: 3,
+    model_img: 'FtrFishShumokuzameToy',
   },
   {
     id: 74,
@@ -890,6 +963,7 @@ const config = [
     month_n: [6, 7, 8, 9],
     month_s: [1, 2, 3, 12],
     time: 3,
+    model_img: 'FtrFishSameToy',
   },
   {
     id: 75,
@@ -902,6 +976,7 @@ const config = [
     month_n: [6, 7, 8, 9],
     month_s: [1, 2, 3, 12],
     time: 1,
+    model_img: 'FtrFishJinbeezameToy',
   },
   {
     id: 76,
@@ -914,6 +989,7 @@ const config = [
     month_n: [6, 7, 8, 9],
     month_s: [1, 2, 3, 12],
     time: 1,
+    model_img: 'FtrFishKobanzameToy',
   },
   {
     id: 77,
@@ -926,6 +1002,7 @@ const config = [
     month_n: [1, 2, 3, 11, 12],
     month_s: [5, 6, 7, 8, 9],
     time: 3,
+    model_img: 'FtrFishChouchinankouToy',
   },
   {
     id: 78,
@@ -938,6 +1015,7 @@ const config = [
     month_n: [1, 2, 3, 4, 5, 12],
     month_s: [6, 7, 8, 9, 10, 11],
     time: 1,
+    model_img: 'FtrFishRyuuguunotukaiToy',
   },
   {
     id: 79,
@@ -950,6 +1028,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 5,
+    model_img: 'FtrFishDemenigisuToy',
   },
   {
     id: 80,
@@ -962,6 +1041,7 @@ const config = [
     month_n: [],
     month_s: [],
     time: 1,
+    model_img: 'FtrFishSirakansuToy',
   },
 ];
 

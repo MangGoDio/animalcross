@@ -1,0 +1,57 @@
+.tab {
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    background: #dcd1a0;
+    margin: 0 6px 6px 0;
+
+    &.active {
+        background: #8a7b66;
+        color: #fff;
+    }
+}
+
+.card_content {
+    position: relative;
+    padding: 8px 12px;
+
+    &:before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        width: 80%;
+        left: 10%;
+        border-bottom: 2px dashed #8a7b66;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        right: 0;
+        height: 80%;
+        border-right: 2px dashed #8a7b66;
+    }
+}
+
+.flower_card {
+    width: 132px;
+    border-radius: 4px;
+    background: #dcd1a0;
+    padding: 6px 0;
+
+    img {
+        width: 52px;
+        height: 52px;
+    }
+}
+
+.plus {
+    width: 24px;
+    margin: 6px auto;
+}
+
+.arrow {
+    width: 24px;
+    margin: 0 12px;
+}

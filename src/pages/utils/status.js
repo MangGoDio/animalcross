@@ -51,15 +51,15 @@ const INSECT_PLACE = [
   { value: 3, label: '树木' },
   { value: 17, label: '树木(除椰子树)' },
   { value: 16, label: '椰子树' },
-  { value: 4, label: '草地' },
-  { value: 15, label: '草地/地面' },
+  { value: 4, label: '地面' },
+  // { value: 15, label: '草地/地面' },
   { value: 5, label: '水边' },
   { value: 6, label: '地里' },
   // { value: 7, label: '池塘' },
   { value: 8, label: '河上/池塘' },
   { value: 9, label: '树桩' },
   { value: 10, label: '雪球附近' },
-  { value: 11, label: '地面' },
+  // { value: 11, label: '地面' },
   { value: 12, label: '沙滩' },
   { value: 18, label: '礁石' },
   { value: 13, label: '村民头上' },
@@ -69,7 +69,7 @@ const INSECT_PLACE = [
 // 天气（昆虫）
 const INSECT_CONDIT = [
   { value: 1, label: '无影响' },
-  { value: 2, label: '非雨雪天' },
+  { value: 2, label: '非雨天' },
   { value: 3, label: '雨天' },
 ];
 
@@ -116,6 +116,123 @@ const MONTH = [
   { value: 12, label: '十二月' },
 ];
 
+// 形状（海产）
+const SEAFOOD_SHAPE = [
+  { value: 1, label: '小' },
+  { value: 2, label: '中' },
+  { value: 3, label: '大' },
+  { value: 4, label: '特大' },
+];
+
+// 时间（鱼类）
+const SEAFOOD_TIME = [
+  { value: 1, label: '全天', list: [] },
+  {
+    value: 3,
+    label: '16点-9点',
+    list: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 16, 17, 18, 19, 20, 21, 22, 23, 24],
+  },
+  {
+    value: 4,
+    label: '4点-21点',
+    list: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
+  },
+  { value: 5, label: '21点-4点', list: [0, 1, 2, 3, 4, 21, 22, 23, 24] },
+  {
+    value: 6,
+    label: '9-16点、21-4点',
+    list: [0, 1, 2, 3, 4, 9, 10, 11, 12, 13, 14, 15, 16, 21, 22, 23, 24],
+  },
+];
+
+// 速度
+const SEAFOOD_SPEED = [
+  { value: 1, label: '不动' },
+  { value: 2, label: '很慢' },
+  { value: 3, label: '慢' },
+  { value: 4, label: '中速' },
+  { value: 5, label: '快' },
+  { value: 6, label: '很快' },
+];
+
+// 家具类型
+const FUN_TYPE = {
+  wallpaper: {
+    1: '商店',
+    2: '骆驼',
+    3: 'DIY',
+    4: '活动',
+  },
+  floor: {
+    1: '商店',
+    2: '骆驼',
+    3: 'DIY',
+    4: '活动',
+  },
+  rug: {
+    1: '里数机',
+    2: '骆驼',
+    3: 'DIY',
+    4: '活动',
+  },
+  fence: {
+    1: '狸端机',
+    2: '复活节',
+    3: '地球日',
+  },
+  door: {
+    1: '常规',
+    2: 'DIY',
+    3: '活动',
+  },
+  wallMounted: {
+    1: '常规', // Nook's Cranny
+    3: 'DIY', // Crafting
+    5: '钓鱼大赛', // Fishing Tourney
+    6: '结婚季', // Wedding Season
+    9: '捕虫大赛', //  Bug-Off
+    10: '其他', // Snowman / Starting items / Rover / Nintendo
+    14: '快乐家协会', // HHA
+    15: '妈妈', // Mom
+    16: '博物馆日', // International Museum Day
+  },
+  miscellaneous: {
+    1: '常规', // Nook's Cranny
+    2: '里数机', // Nook Miles Shop
+    3: 'DIY', // Crafting
+    4: '吕游', // Gulliver
+    5: '钓鱼大赛', // Fishing Tourney
+    6: '结婚季', // Wedding Season
+    7: '生日', // Birthday
+    8: '手游联动', // Nook Shopping Promotion
+    9: '捕虫大赛', //  Bug-Off
+    10: '其他', // Snowman / Starting items / Rover / Nintendo
+    11: '渡渡航班', // Dodo Airlines
+    12: '节日商店', // Nook Shopping Seasonal
+    13: '复活节', // Bunny Day
+    14: '快乐家协会', // HHA
+    15: '妈妈', // Mom
+  },
+  umbrellas: {
+    1: '商店',
+    2: 'DIY',
+    3: '活动',
+  },
+  housewares: {
+    1: '常规', // Nook's Cranny
+    2: '里数机', // Nook Miles Shop
+    3: 'DIY', // Crafting
+    4: '吕游', // Gulliver
+    5: '钓鱼大赛', // Fishing Tourney
+    6: '结婚季', // Wedding Season
+    7: '生日', // Birthday
+    8: '手游联动', // Nook Shopping Promotion
+    9: '捕虫大赛', //  Bug-Off
+    10: '其他', // Snowman / Starting items / Nintendo
+    11: '海盗吕游',
+  },
+};
+
 const STATUS = {
   FISH_PLACE,
   FISH_SHAPE,
@@ -123,7 +240,11 @@ const STATUS = {
   INSECT_PLACE,
   INSECT_CONDIT,
   INSECT_TIME,
+  SEAFOOD_SHAPE,
+  SEAFOOD_TIME,
+  SEAFOOD_SPEED,
   MONTH,
+  FUN_TYPE,
 };
 
 export default STATUS;

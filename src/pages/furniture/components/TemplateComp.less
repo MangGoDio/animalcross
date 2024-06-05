@@ -1,0 +1,41 @@
+.card_list {
+    .card {
+        width: 120px;
+        display: inline-block;
+        text-align: center;
+        border: 2px solid #dcd1a0;
+        margin: 2px;
+        border-radius: 4px;
+        padding: 5px 0 0;
+        cursor: pointer;
+        position: relative;
+        transition: .2s;
+
+        img {
+            height: 50px;
+            margin: 0 auto;
+        }
+
+        .title {
+            padding: 0 3px;
+            border-bottom: 1px solid #dcd1a0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .isMark {
+        background: #dcd1a0;
+    }
+}
+
+
+
+@media screen and (max-width: 414px) {
+    .card_list {
+        .card {
+            width: 110px;
+        }
+    }
+}

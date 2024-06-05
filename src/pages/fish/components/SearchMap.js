@@ -4,9 +4,19 @@ import { Select, Button, Switch, Row } from 'antd';
 const { Option } = Select;
 
 export default function(props) {
-  let { value, onChange, isHide, onSwitch } = props;
+  let { value, onChange, isHide, onSwitch, isList } = props;
+
   const changeValue = (val, name) => {
-    onChange({ ...value, [name]: val });
+    let values = { ...value, [name]: val };
+    for (let i in values) {
+      if (values[i] instanceof Array) {
+        values[i].length === 0 && delete values[i];
+      } else {
+        !values[i] && values[i] !== 0 && delete values[i];
+      }
+    }
+
+    onChange(values);
   };
 
   const setCurrent = () => {
@@ -75,10 +85,12 @@ export default function(props) {
       <Button style={{ margin: '0 16px 16px 0' }} onClick={() => onChange({})}>
         重置
       </Button>
-      <span style={{ marginBottom: 16 }}>
-        过滤查询结果
-        <Switch style={{ marginLeft: 6 }} checked={isHide} onChange={onSwitch} />
-      </span>
+      {!isList && (
+        <span style={{ marginBottom: 16 }}>
+          过滤查询结果
+          <Switch style={{ marginLeft: 6 }} checked={isHide} onChange={onSwitch} />
+        </span>
+      )}
     </Row>
   );
 }
