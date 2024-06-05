@@ -4,7 +4,7 @@ import SearchMap from '../fossil/components/SearchMap';
 import { setConfigInfo, getConfigInfo } from '@/pages/utils/utils';
 import Wallpaper from './Wallpaper';
 import Flooring from './Flooring';
-import Fence from './Fence';
+import Fence from './Fences';
 import DoorDecor from './DoorDecor';
 import WallMounted from './WallMounted';
 import Miscellaneous from './Miscellaneous';
